@@ -1,0 +1,137 @@
+.navbar {
+    padding: 14px 0;
+    background-image: var(--header-bg);
+    display: flex;
+    justify-content: center;
+    /* position: fixed;
+    width: 100%;
+    z-index: 10; */
+}
+.navbar .btn-toggle {
+    text-decoration: none;
+    color: var(--bg-color);
+    position: relative;
+    margin: auto 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    background-color: transparent;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--bg-color);
+    position: relative;
+    margin: auto 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0;
+        background-image: var(--header-bg);
+        display: flex;
+        justify-content: left;
+    }
+    #bg-menu {
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        margin: 5px 20px;
+        overflow: visible;
+        position: relative;
+        justify-content: center;
+        z-index:2;
+    }
+    #bg-menu span,
+    #bg-menu span:before,
+    #bg-menu span:after {
+        background: #fff;
+        display: block;
+        height: 3px;
+        border-radius: 999px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+    #bg-menu span:before,
+    #bg-menu span:after {
+        content: "";
+    }
+    #bg-menu span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+    }
+    #bg-menu span:before {
+        left: 0px;
+        top: -10px;
+        width: 27px;
+    }
+    #bg-menu span:after {
+        left: 0px;
+        top: 10px;
+        width: 27px;
+    }
+      
+    #bg-menu.close span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+    }
+    #bg-menu.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+    }
+    #bg-menu.close span:after {
+        top: 0px;
+        left:0;
+        transform: rotate(90deg);
+        opacity:0;
+        width:0;
+    }
+    #menu{
+        z-index:1;
+        min-width:100%;
+        min-height:100%;
+        position: fixed;
+        top:0;
+        height:0;
+        visibility: hidden;
+        opacity: 0;
+        text-align:center;
+        padding-top:20px;
+        transition: all 0.3s ease-in-out;
+      
+    }
+    #menu.overlay{
+        visibility: visible;
+        opacity: 1;
+        padding-top:100px;
+        background: linear-gradient(219deg, 
+        var(--color-1) 19%, 
+        transparent 19%,transparent 20%, 
+        var(--color-2) 20%, var(--color-2)  39%,
+        transparent 39%,transparent 40%, 
+        var(--color-3) 40%,var(--color-3) 59% ,
+        transparent 59%,transparent 60%, 
+        var(--color-4) 60%, var(--color-4) 79%,
+        transparent 79%, transparent 80%, 
+        var(--color-5) 80%);
+    }
+    #menu li{
+        list-style:none;
+    }
+    #menu a{
+        color:#fff;
+        display:block;
+        font-size: 32px;
+        margin-bottom:30px;
+        text-decoration:none;
+    }
+}

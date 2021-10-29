@@ -1,0 +1,55 @@
+.home-page-container {
+    padding: 25px 20px;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+    height: 100%;
+    /* background-color: #f8f40a; */
+}
+
+.wrapper {
+    /* background: var(--bg-color); */
+    /* background-color: aqua; */
+    line-height: 1;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 50px 0 0; */
+    /* min-height: calc(100vh - 16px); */
+    /* z-index: -10; */
+    margin: auto;
+}
+
+// TITLE EFFECT
+h1 {
+    font-family: "Exo", sans-serif;
+    font-size: 6vw;
+    font-weight: 900;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    max-width: 100%;
+    /* margin: auto; */
+    text-transform: uppercase;
+    background: linear-gradient(219deg, 
+      var(--color-1) 19%, 
+      transparent 19%,transparent 20%, 
+      var(--color-2) 20%, var(--color-2)  39%,
+      transparent 39%,transparent 40%, 
+      var(--color-3) 40%,var(--color-3) 59% ,
+      transparent 59%,transparent 60%, 
+      var(--color-4) 60%, var(--color-4) 79%,
+      transparent 79%, transparent 80%, 
+      var(--color-5) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 9vw;
+      margin: 25% auto 0;
+    }
+  }

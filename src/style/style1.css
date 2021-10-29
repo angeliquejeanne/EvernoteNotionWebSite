@@ -1,0 +1,133 @@
+
+.home-page-container {
+    padding: 25px 20px;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+    height: 100%;
+    /* background-color: #f8f40a; */
+}
+
+/* .container {
+  padding: 1.5rem;   
+  text-align: center;
+  background: radial-gradient(circle at 1.4% 1.4% ,var(--color-1) .8%,transparent  .8% ), 
+    radial-gradient(circle at 5.5% 3%,var(--color-2) .45% ,transparent .45% ), 
+    radial-gradient(circle at 2.5% 3.5%,var(--color-3) .5% ,transparent .5% ), 
+    radial-gradient(circle at 4.5% 1.2%,var(--color-4) .25%,transparent .25% ),
+
+    radial-gradient(circle at 98% 98% ,var(--color-1) .8%,transparent  .8% ), 
+    radial-gradient(circle at 95% 95%,var(--color-2) .45% ,transparent .45% ), 
+    radial-gradient(circle at 94.5% 97.5%,var(--color-3) .5% ,transparent .5% ), 
+    radial-gradient(circle at 98.5% 95.5%,var(--color-4) .25%,transparent .25% );
+
+
+} */
+
+
+@media screen and (max-height: 768px) and (orientation: landscape) {
+    
+}
+
+
+.home-page-container .home-content {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.home-page-container .home-content h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--title-color);
+    font-family: 'Playfair Display SC', serif;
+}
+
+.home-page-container .home-content h1 span {
+    font-weight: 700;
+    color: var(--span-color);
+    text-decoration: var(--span-color) wavy underline;
+}
+
+.home-page-container .home-content p {
+    font-size: 20px;
+}
+
+.home-page-container .home-card-container {
+    padding: 20px 0;
+    display: grid;
+    grid-template: auto/repeat(auto-fill, minmax(270px,1fr));
+    grid-gap: 20px;
+    /* background-color: #f8f40a; */
+}
+.home-page-container .home-card-container .home-card {
+    background-color: var(--bg-color);
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.home-card-container .home-card .home-img-container {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid lightgrey;
+}
+.home-card-container .home-card .home-img-container div {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.home-card-container .home-card .home-img-container div div {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 56.25%;
+}
+
+.home-card-container .home-card .home-img-container div img {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    border: medium none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    filter: none;
+    background-size: cover;
+    background-image: none;
+    background-position: 0% 0%;
+}
+
+.home-card-container .home-card .home-card-text-container {
+    padding: 12px;
+}
+
+.home-card-container .home-card .home-card-text-container h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--title-color);
+}
+
+.home-card-container .home-card .home-card-text-container .home-card-link {
+    display: inline-flex;
+    padding: 8px 16px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    background-color: #4e0101;
+    border-radius: 5px;
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid var(--bg-color);
+    cursor: pointer;
+}
+
+

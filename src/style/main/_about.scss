@@ -1,0 +1,19 @@
+.about-page-container {
+    padding: 25px 20px;
+    margin: auto;
+    justify-content: center;
+    max-width: 1300px;
+    height: 100%;
+    /* background-color: #f8f40a; */
+}
+.about-page-container h2 {
+    font-size: clamp(30px,5vw,40px);
+    font-weight: 400;
+    margin-top: 30px;
+    font-family: 'Playfair Display SC', serif;
+}
+.about-page-container p {
+    font-size: clamp(16px,4vw,20px);
+    margin-top: 25px;
+    line-height: 1;
+}

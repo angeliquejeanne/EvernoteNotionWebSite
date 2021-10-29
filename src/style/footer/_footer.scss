@@ -1,0 +1,23 @@
+.footer {
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--color-5);
+    position: relative;
+    margin: 0 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:768px) {
+    .footer a {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        /* background-color: darkgreen; */
+    }
+}
